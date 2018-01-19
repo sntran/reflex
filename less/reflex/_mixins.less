@@ -73,8 +73,22 @@
   //
   text-align: left;
   text-align: start;
-  -moz-text-align-last: left;
-  -moz-text-align-last: start;
   text-align-last: left;
   text-align-last: start;
+}
+
+// Utilities
+.foreach-breakpoints(@iterator; @i: length(@reflex-breakpoints)) when (isnumber(@i)) and (@i > 0) {
+  .foreach-breakpoints(@iterator, @i - 1);
+
+  @breakpoint: extract(@reflex-breakpoints, @i);
+  @prefix: ~"-@{breakpoint}";
+  @width-variable: ~"reflex-@{breakpoint}";
+  @media (min-width: @@width-variable) {
+    @iterator();
+  }
+}
+.foreach-breakpoints(@iterator; @i) when (@i = 0) {
+  @prefix: ~"";
+  @iterator();
 }
