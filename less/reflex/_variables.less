@@ -1,0 +1,37 @@
+// --------------------------------------------------
+// reflex variables
+// --------------------------------------------------
+
+// Prefix
+// -------------------------
+// You can optionally namespace reflex classes to avoid clashing with other css frameworks
+// e.g. setting @grid-prefix as "reflex-" here would cause col-sm-6 to become reflex-col-sm-6
+// Example: @grid-prefix: reflex-;
+// By default this is an empty string
+@reflex-prefix: ~"";
+
+// Legacy support
+// -------------------------
+// If you prefer to use this as a purely flexbox grid without legacy support then set this to false
+@legacy-support: true;
+
+// Grid
+// -------------------------
+@reflex-columns: 12;
+@reflex-gutter: 30px;
+
+// Breakpoints
+// -------------------------
+@reflex-breakpoints: xs, sm, md, lg, xlg;
+
+@reflex-xs: 576px;
+@reflex-sm: 768px;
+@reflex-md: 992px;
+@reflex-lg: 1200px;
+@reflex-xlg: 1600px;
+
+@reflex-xxs-max:    (@reflex-xs - 1);
+@reflex-xs-max:     (@reflex-sm - 1);
+@reflex-sm-max:     (@reflex-md - 1);
+@reflex-md-max:     (@reflex-lg - 1);
+@reflex-lg-max:     (@reflex-xlg - 1);
