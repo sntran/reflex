@@ -36,13 +36,11 @@
 .calc-reflex-columns(@index; @class; @type) when (@index > 0) {
   .@{reflex-prefix}@{class}@{index} {
     @{type}: (@index / @reflex-columns) * 100%;
-    *@{type}: ((@index / @reflex-columns) * 100%) - .1; // ie7 css hack
   }
 }
 .calc-reflex-columns(@index; @class; @type) when (@type = margin-left) and (@index = 0) {
   .@{reflex-prefix}@{class}@{index} {
     margin-left: 0;
-    *margin-left: 0; // ie7 css hack
   }
 }
 
