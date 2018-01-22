@@ -67,9 +67,10 @@ The fork will be kept in sync with upstream as close as possible, but may omit f
 
 Current differences:
 
-- Only the grid implement, no container, no helpers.
 - No ordering classes.
-- No vendor prefixes. IMHO, it should be done with Autoprefixr outside of this.
+- Only helpers that can have fallbacks.
+- No vendor prefixes. IMHO, it should be done with Autoprefixer outside of this.
 - Added `.col-*-offset-*` classes to increase the left margin of the columns.
 - Added `.col-*-push-*` and `.col-*-pull-*` classes to rearrange the order of the columns.
 - Only the immediate `.grid` child will have negative margins, and only left and right margins.
+- Added `.visible-*-*` classes to reset the display style on certain breakpoint.

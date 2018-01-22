@@ -1,4 +1,46 @@
 // --------------------------------------------------
+// reflex containers
+// --------------------------------------------------
+
+.@{reflex-prefix}container,
+.@{reflex-prefix}container-full {
+    box-sizing: border-box;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: (@reflex-gutter);
+    padding-left: (@reflex-gutter);
+
+    .@{reflex-prefix}grid {
+      margin-right: -(@reflex-gutter / 2);
+      margin-left: -(@reflex-gutter / 2);
+    }
+}
+
+.@{reflex-prefix}container {
+  @media (min-width: @reflex-xs) {
+    max-width: @reflex-xs;
+  }
+
+  @media (min-width: @reflex-sm) {
+    max-width: @reflex-sm;
+  }
+
+  @media (min-width: @reflex-md) {
+    max-width: @reflex-md;
+  }
+
+  @media (min-width: @reflex-lg) {
+    max-width: @reflex-lg;
+  }
+
+  @media (min-width: @reflex-xlg) {
+    max-width: @reflex-xlg;
+  }
+}
+
+
+// --------------------------------------------------
 // reflex grid
 // --------------------------------------------------
 .@{reflex-prefix}grid {
