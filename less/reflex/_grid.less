@@ -83,10 +83,9 @@
   }
 
   // handle grids nested in columns
-  & > .@{reflex-prefix}grid {
+  & .@{reflex-prefix}grid {
     flex: 1 1 auto;
-    margin-left: -@reflex-gutter/2;
-    margin-right: -@reflex-gutter/2;
+    margin: -@reflex-gutter/2;
   }
 
   & when (@legacy-support) {
