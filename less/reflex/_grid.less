@@ -8,12 +8,12 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: (@reflex-gutter);
-    padding-left: (@reflex-gutter);
+    padding-right: (@reflex-grid-spacing * 2);
+    padding-left: (@reflex-grid-spacing * 2);
 
     .@{reflex-prefix}grid {
-      margin-right: -(@reflex-gutter / 2);
-      margin-left: -(@reflex-gutter / 2);
+      margin-right: -(@reflex-grid-spacing);
+      margin-left: -(@reflex-grid-spacing);
     }
 }
 
@@ -75,7 +75,7 @@
   position: relative;
   width: 100%;
   vertical-align: top;
-  padding: @reflex-gutter/2;
+  padding: @reflex-grid-spacing;
 
   &:before,
   &:after {
@@ -85,7 +85,7 @@
   // handle grids nested in columns
   & .@{reflex-prefix}grid {
     flex: 1 1 auto;
-    margin: -@reflex-gutter/2;
+    margin: -@reflex-grid-spacing;
   }
 
   & when (@legacy-support) {

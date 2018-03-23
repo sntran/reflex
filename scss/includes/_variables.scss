@@ -44,3 +44,20 @@ $reflex-lg-max:     ($reflex-xlg - 1);
 // Spacing
 // -------------------------
 $reflex-grid-spacing:       15px !default;
+
+// Custom properties so others can reference the variables.
+:root {
+  --reflex-prefix: $reflex-prefix;
+  --reflex-columns: $reflex-columns;
+  --reflex-grid-spacing: $reflex-grid-spacing;
+  --reflex-xs: $reflex-xs;
+  --reflex-sm: $reflex-sm;
+  --reflex-md: $reflex-md;
+  --reflex-lg: $reflex-lg;
+  --reflex-xlg: $reflex-xlg;
+  --reflex-xxs-max: $reflex-xxs-max;
+  --reflex-xs-max: $reflex-xs-max;
+  --reflex-sm-max: $reflex-sm-max;
+  --reflex-md-max: $reflex-md-max;
+  --reflex-lg-max: $reflex-lg-max;
+}

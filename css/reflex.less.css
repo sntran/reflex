@@ -1,3 +1,18 @@
+:root {
+  --reflex-prefix: ;
+  --reflex-columns: 12;
+  --reflex-grid-spacing: 15px;
+  --reflex-xs: 576px;
+  --reflex-sm: 768px;
+  --reflex-md: 992px;
+  --reflex-lg: 1200px;
+  --reflex-xlg: 1600px;
+  --reflex-xxs-max: 575px;
+  --reflex-xs-max: 767px;
+  --reflex-sm-max: 991px;
+  --reflex-md-max: 1199px;
+  --reflex-lg-max: 1599px;
+}
 .container,
 .container-full {
   box-sizing: border-box;
@@ -75,10 +90,9 @@
   letter-spacing: normal;
   white-space: normal;
 }
-[class^="col-"] > .grid {
+[class^="col-"] .grid {
   flex: 1 1 auto;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin: -15px;
 }
 .col-12 {
   width: 100%;
