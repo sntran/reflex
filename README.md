@@ -72,5 +72,5 @@ Current differences:
 - No vendor prefixes. IMHO, it should be done with Autoprefixer outside of this.
 - Added `.col-*-offset-*` classes to increase the left margin of the columns.
 - Added `.col-*-push-*` and `.col-*-pull-*` classes to rearrange the order of the columns.
-- Only the immediate `.grid` child will have negative margins, and only left and right margins.
 - Added `.visible-*-*` classes to reset the display style on certain breakpoint.
+- Added CSS custom properties for grid variables.
